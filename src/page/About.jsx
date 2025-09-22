@@ -26,10 +26,10 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8 }}
-          className="text-center space-y-4"
+          className="text-center font-serif space-y-4"
         >
-          <h1 className="text-4xl font-bold text-blue-600">About Ayursutra</h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <h1 className="md:text-4xl text-3xl font-bold text-blue-600">About Ayursutra</h1>
+          <p className="md:text-lg text-sm text-gray-700 max-w-3xl mx-auto">
             Ayursutra is a platform for managing therapy and patient scheduling in Ayurveda centers. 
             We combine traditional therapy practices with modern digital tools to provide personalized, 
             seamless, and efficient healthcare solutions.
@@ -50,7 +50,7 @@ const About = () => {
           >
             <HiOutlineLightBulb className="mx-auto h-12 w-12 text-yellow-400 mb-4" />
             <h2 className="text-2xl font-semibold mb-2 text-blue-500">Our Vision</h2>
-            <p>Redefine personalized therapy with technology and care, making wellness accessible to all.</p>
+            <p className="md:text-lg text-sm">Redefine personalized therapy with technology and care, making wellness accessible to all.</p>
           </motion.div>
 
           <motion.div 
@@ -59,7 +59,7 @@ const About = () => {
           >
             <HiOutlineFlag className="mx-auto h-12 w-12 text-green-400 mb-4" />
             <h2 className="text-2xl font-semibold mb-2 text-blue-500">Our Mission</h2>
-            <p>Deliver seamless, high-quality therapy experiences that prioritize individual needs and progress.</p>
+            <p className="md:text-lg text-sm">Deliver seamless, high-quality therapy experiences that prioritize individual needs and progress.</p>
           </motion.div>
 
           <motion.div 
@@ -68,7 +68,7 @@ const About = () => {
           >
             <HiOutlineShieldCheck className="mx-auto h-12 w-12 text-blue-400 mb-4" />
             <h2 className="text-2xl font-semibold mb-2 text-blue-500">Our Values</h2>
-            <p>Innovation, Compassion, Integrity, and commitment to excellence in every session.</p>
+            <p className="md:text-lg text-sm">Innovation, Compassion, Integrity, and commitment to excellence in every session.</p>
           </motion.div>
         </motion.div>
 
@@ -78,16 +78,16 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-blue-50 rounded-xl p-10 flex flex-col md:flex-row items-center gap-8"
+          className="bg-blue-50 rounded-xl md:p-10 flex flex-col md:flex-row items-center gap-8"
         >
           <img 
             src="https://img.freepik.com/premium-vector/ayurveda-herbal-therapy-concept-flat-illustration_52683-81859.jpg?w=740" 
             alt="Ayurveda Illustration" 
-            className="rounded-xl shadow-lg w-full md:w-1/2 object-cover transform hover:scale-105 transition duration-300"
+            className="rounded w-full md:w-1/2 object-cover transform hover:scale-105 transition duration-300"
           />
           <div className="space-y-4 md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800">Why Choose Ayursutra?</h2>
-            <p className="text-gray-700 text-lg">
+            <h2 className="md:text-3xl text-2xl font-bold text-gray-800">Why Choose Ayursutra?</h2>
+            <p className="text-gray-700 md:text-lg text-sm">
               Our platform ensures you can manage therapies, track progress, and schedule appointments seamlessly, 
               all while keeping the essence of Ayurveda intact. We make wellness simple, modern, and effective.
             </p>

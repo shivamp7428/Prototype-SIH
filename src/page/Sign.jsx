@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const Sign = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center  px-6">
+    <div className="min-h-screen flex items-center justify-center  md:px-6">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className=" rounded border border-gray-300 p-10 w-full max-w-md"
       >
-        <h2 className="text-3xl font-bold  text-indigo-600 text-center mb-6">
+        <h2 className="md:text-3xl text-xl font-bold  text-indigo-600 text-center mb-6">
           Create an Account
         </h2>
 
@@ -53,7 +53,7 @@ const Sign = () => {
           </button>
         </form>
 
-        <p className="text-center font-serif text-gray-500 mt-4">
+        <p className="md:text-center font-serif text-gray-500 mt-4">
           Already have an account?{' '}
           <a href="/Login" className="text-indigo-600 font-semibold hover:underline">
             Login

@@ -52,7 +52,7 @@ const Service = () => {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="text-5xl md:text-5xl font-bold text-indigo-600 mb-30 font-serif text-center"
+        className="text-2xl md:text-5xl font-bold text-indigo-600 mb-30 font-serif text-center"
       >
         Explore Our Services
       </motion.h1>

@@ -10,7 +10,7 @@ const Login = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="bg-white rounded border border-gray-300 p-10 w-full max-w-md"
       >
-        <h2 className="text-3xl font-serif font-bold text-indigo-600 text-center mb-6">
+        <h2 className="md:text-3xl  text-xl font-serif font-bold text-indigo-600 text-center mb-6">
           Login to Ayursutra
         </h2>
 
@@ -43,10 +43,10 @@ const Login = () => {
           </button>
         </form>
 
-        <p className="text-center font-serif text-gray-500 mt-4">
+        <p className="md:text-center text-sm font-serif text-gray-500 mt-4">
           Don't have an account?{' '}
           <a href="/SignUp" className="text-indigo-600 font-semibold hover:underline">
-            Sign Up
+            Sign 
           </a>
         </p>
       </motion.div>

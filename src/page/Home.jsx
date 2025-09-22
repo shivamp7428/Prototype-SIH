@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 import { LiaHandPointRightSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
+import { FaChevronRight } from "react-icons/fa6";
 export default function Home() { 
     const [speaking, setSpeaking] = useState(false);
     const text = "Supports local languages with voice search options.";
@@ -28,7 +29,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-white text-3xl md:text-5xl font-bold mb-4 font-serif"
+          className="text-white text-3xl md:text-7xl font-bold mb-4 font-serif"
         >
           Welcome To
         </motion.h1>
@@ -41,9 +42,17 @@ export default function Home() {
         >
           Ayursutra Panchakarma
         </motion.p>
+       <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+          className="text-blue-700 font-bold mt-10  text-2xl md:text-2xl font-serif"
+        >
+          <a href="#explore" className="flex p-2 cursor-pointer rounded items-center bg-white">Explore <FaChevronRight className="w-6 h-6"/></a>
+        </motion.p>
       </div>
     </div>
- <section className="bg-gradient-to-r from-blue-500 to-green-500 text-white py-20">
+ <section className="bg-gradient-to-r  from-blue-500 to-green-500 text-white py-20" id="explore">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
         {/* Left Content */}
@@ -54,20 +63,20 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-left font-serif"
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
-            Smarter Scheduling with <br /> 
+          <h1 className="text-xl md:text-5xl font-extrabold md:mb-6">
+            Smarter Scheduling with <br className="hidden"/> 
             <span className="text-yellow-300">AI-Powered Therapy</span>
           </h1>
-          <p className="text-lg md:text-xl mb-6">
+          <p className="text-sm md:text-xl mb-6">
             Experience <span className="font-semibold">personalized Ayurvedic care</span>,  
             hassle-free scheduling, and <span className="font-semibold">vernacular support</span> —  
             all in one intelligent platform designed for your wellness journey.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex md:flex-wrap gap-4">
             <motion.a
               whileHover={{ scale: 1.05 }}
               href="/signup"
-              className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-gray-100 transition"
+              className="bg-white text-blue-600 md:px-6 p-2 py-3 rounded-xl font-semibold shadow-md hover:bg-gray-100 transition"
             >
               Get Started
             </motion.a>
@@ -99,7 +108,7 @@ export default function Home() {
       </div>
     </section>
 <hr />
-<section className="py-16 px-6 font-serif bg-gray-50">
+<section className="md:py-16 md:px-6 font-serif bg-gray-50">
       <div className="container mx-auto">
 
         {/* Card */}
@@ -113,7 +122,7 @@ export default function Home() {
               transition: { staggerChildren: 0.3 }
             }
           }}
-          className="p-10 grid md:grid-cols-2 gap-40 items-center"
+          className="p-10 grid md:grid-cols-2 md:gap-40 gap-10 items-center"
         >
           {/* Left Content */}
           <motion.div
@@ -123,7 +132,7 @@ export default function Home() {
             }}
             className="text-left"
           >
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            <h2 className="md:text-3xl text-xl font-bold md:mb-6 text-gray-800">
               Find Ayurvedic therapy
             </h2>
             <p className="text-gray-600 mb-6">
@@ -158,7 +167,7 @@ export default function Home() {
     </section>
 <hr />
 
-  <section className="px-6 py-16 mb-12 bg-gray-50 font-serif">
+  <section className="md:px-6 md:py-16 md:mb-12 bg-gray-50 font-serif">
       <div className="container mx-auto">
 
         {/* Card */}
@@ -170,7 +179,7 @@ export default function Home() {
             hidden: {},
             visible: { transition: { staggerChildren: 0.3 } }
           }}
-          className="p-10 grid md:grid-cols-2 gap-40 items-center"
+          className="p-10 grid md:grid-cols-2 md:gap-40 gap-10 items-center"
         >
 
           {/* Left Content */}
@@ -181,7 +190,7 @@ export default function Home() {
             }}
             className="text-left"
           >
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            <h2 className="md:text-3xl text-2xl font-bold mb-6 text-gray-800">
               Nearby therapy
             </h2>
             <p className="text-gray-600 mb-6">
@@ -207,7 +216,7 @@ export default function Home() {
             <img
               src="https://media.istockphoto.com/id/1282488617/photo/downtown-building-located-at-the-hospital-3d-rendering.jpg?s=612x612&w=0&k=20&c=JLF80tNkmiUMcmO8CjSWvGRGmzEaynRXX8l9JLIA2Gc="
               alt="Nearby therapy"
-              className="rounded-xl shadow-lg w-full max-w-md"
+              className="rounded shadow w-full max-w-md"
             />
           </motion.div>
 
@@ -216,7 +225,7 @@ export default function Home() {
     </section>
 <hr />
 
- <section className="px-6 py-16 mb-12 font-serif">
+ <section className="md:px-6 md:py-16 md:mb-12 font-serif">
       <div className="container mx-auto">
 
         {/* Card */}
@@ -228,7 +237,7 @@ export default function Home() {
             hidden: {},
             visible: { transition: { staggerChildren: 0.3 } }
           }}
-          className="p-10 grid md:grid-cols-2 gap-40 items-center"
+          className="p-10 grid md:grid-cols-2 md:gap-40 gap-10 items-center"
         >
 
           {/* Left Content */}
@@ -239,7 +248,7 @@ export default function Home() {
             }}
             className="text-left"
           >
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            <h2 className="md:text-3xl text-2xl font-bold mb-6 text-gray-800">
               Offline-first Access
             </h2>
             <p className="text-gray-600 mb-6">
@@ -264,7 +273,7 @@ export default function Home() {
             <img
               src="https://res.cloudinary.com/dznmoz8hw/image/upload/v1758476879/unnamed_dwf3o8.png"
               alt="Offline Access Illustration"
-              className="rounded-xl w-full max-w-md"
+              className="rounded w-full md:max-w-md"
             />
           </motion.div>
 
@@ -294,7 +303,7 @@ export default function Home() {
           }}
           className="flex flex-col gap-4"
         >
-          <h3 className="text-2xl font-bold text-gray-800">Voice Support For Patient</h3>
+          <h3 className="md:text-2xl text-xl font-bold text-gray-800">Voice Support For Patient</h3>
           <p className="text-gray-600">
             Supports local languages with voice search options.
           </p>
