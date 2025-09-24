@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow px-6 md:px-20 py-4 flex justify-between items-center">
       {/* Logo */}
-      <div className="md:text-xl md:text-2xl flex gap-2 font-bold text-blue-700 font-serif items-center">
+      <div className="md:text-xl  flex gap-2 font-bold text-blue-700 font-serif items-center">
         <img
-          src="https://i.pinimg.com/564x/40/3a/ba/403aba3b6d1d40e0e38eea78a5848bff.jpg"
+          src="https://res.cloudinary.com/dznmoz8hw/image/upload/v1758687916/healthcodes_iqm3cw.png"
           alt="logo"
           width={35}
           height={35}
